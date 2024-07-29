@@ -1,45 +1,55 @@
 #completar {
-    transition: all 500ms ease-in-out;
-    cursor: pointer;
-    border: 1px solid rgb(246, 245, 248);
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+  border: 1px solid rgb(246, 245, 248);
 }
 
 #completar:hover {
-    background-color: rgb(69, 114, 69);
-    transition: all 500ms ease-in-out;
+  background-color: rgb(69, 114, 69);
+  transition: all 500ms ease-in-out;
 }
 
 #eliminar:hover {
-    background-color: rgb(175, 54, 54);
-    transition: all 500ms ease-in-out;
-    cursor: pointer;
+  background-color: rgb(175, 54, 54);
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
 }
 
 #eliminar {
-    transition: all 500ms ease-in-out;
-    border: 1px solid rgb(246, 245, 248);
+  transition: all 500ms ease-in-out;
+  border: 1px solid rgb(246, 245, 248);
+}
+
+ul {
+  list-style: none;
+  padding-left: 10px;
 }
 
 .completada {
-    text-decoration: line-through;
+  text-decoration: line-through;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .noCompletada {
-    text-decoration: none;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .containerTarea {
-    padding: 5px;
-    border-radius: 100px;
-    margin: 10px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    transition: all 1s ease-in-out;
-    background-color: rgb(88, 61, 187);
-    border: 1px solid rgb(246, 245, 248);
+  padding: 5px;
+  border-radius: 100px;
+  margin: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: all 1s ease-in-out;
+  background-color: rgb(88, 61, 187);
+  border: 1px solid rgb(246, 245, 248);
 }
 
 .containerTareaCompletada {
-    transition: all 1s ease-in-out;
-    background-color: rgb(94, 142, 68);
+  transition: all 1s ease-in-out;
+  background-color: rgb(94, 142, 68);
 }
-
