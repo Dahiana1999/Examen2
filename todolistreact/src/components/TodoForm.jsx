@@ -2,7 +2,7 @@ import React from "react";
 
 const TodoForm = ({ handleChange, addTask, tarea }) => {
   return (
-    <div>
+    <div> 
       <form onSubmit={addTask}>
         <input
           type="text"

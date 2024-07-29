@@ -49,3 +49,136 @@ input {
   border: none;
   outline: none;
 }
+
+.link {
+  text-decoration: none;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.diaLunes {
+  padding: 10px;
+  background-color: #8080f9;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 50px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  border: 3px solid rgb(246, 245, 248);
+}
+
+.diaLunes:hover {
+  background-color: #1c1cd2;  
+  color: #ffffff;
+}
+
+.diaMartes {
+  padding: 10px;
+  background-color: #48cb60;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 50px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  border: 3px solid rgb(246, 245, 248);
+}
+
+.diaMartes:hover {
+  background-color: #05b726;  
+  color: #ffffff;
+}
+
+.diaMiercoles {
+  padding: 10px;
+  background-color: #57c5ed;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 50px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  border: 3px solid rgb(246, 245, 248);
+}
+
+.diaMiercoles:hover {
+  background-color: #0f8bca;  
+  color: #ffffff;
+}
+
+.diaJueves {
+  padding: 10px;
+  background-color: #ebc53b;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 50px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  border: 3px solid rgb(246, 245, 248);
+}
+
+.diaJueves:hover {
+  background-color: #ff7d03;  
+  color: #ffffff;
+}
+
+.diaViernes {
+  padding: 10px;
+  background-color: #f980e1;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 50px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  border: 3px solid rgb(246, 245, 248);
+}
+
+.diaViernes:hover {
+  background-color: #b3008b;  
+  color: #ffffff;
+}
+
+.diaSabado {
+  padding: 10px;
+  background-color: #7cba00;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 50px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  border: 3px solid rgb(246, 245, 248);
+}
+
+.diaSabado:hover {
+  background-color: #098c00;  
+  color: #ffffff;
+
+}
+
+.diaDomingo {
+  padding: 10px;
+  background-color: #f99a80;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 50px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  border: 3px solid rgb(246, 245, 248);
+}
+
+.diaDomingo:hover {
+  background-color: #ff3700;  
+  color: #ffffff;
+}

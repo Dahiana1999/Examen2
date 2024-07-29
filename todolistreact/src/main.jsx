@@ -4,6 +4,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
   {
     path: "/lunes",
     element: <div
-    style={{color:"white", fontSize:"50px", textAlign:"center", fontWeight:"bold",textDecoration:"underline"}} > Tarea del Lunes
+    style={{color:"white", fontSize:"50px", textAlign:"center", fontWeight:"bold",textDecoration:"underline"}}> Tarea del Lunes
     <img src="./src/assets/lunes.jpg" alt="imagen" width="500" height="500" style={{borderRadius:"10px", display:'flex'}}/>
     </div>
   },
