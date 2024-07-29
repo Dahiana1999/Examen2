@@ -49,7 +49,7 @@ function App() {
 
   return (
     <>
-      <header>Organizador diario</header>
+      <header><img src="./src/assets/easy.png" alt="imagen" width="150" height="150"/>Organizador diario</header>
       <TodoForm handleChange={handleChange} addTask={addTask} tarea={tarea} />
       {tareas.length > 1 && (
         <button onClick={() => setTareas([])}>Has completado todo</button>
