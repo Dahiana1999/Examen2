@@ -73,7 +73,7 @@ function App() {
           key={tarea.id}
           id={tarea.id}
           tarea={tarea}
-          borrarTarea={borrarTarea} 
+          borrarTarea={borrarTarea}
         />
       ))}
     </>

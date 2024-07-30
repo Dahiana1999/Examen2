@@ -1,24 +1,39 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../Task.css";
 
 const TodoList = ({ tarea, borrarTarea }) => {
   const [completada, setCompletada] = useState(false);
   const [editarTarea, setEditarTarea] = useState(false);
-  const [guardar, setGuardar] = useState(false); 
+  const [guardarTareas, setGuardarTareas] = useState("");
 
+ 
+// EDITAR TAREA 
   if (editarTarea) {
-    return (  
+    return (
       <div>
-        <input />
-        <button id="cancelar" onClick={() => setEditarTarea(!editarTarea)}>Cancelar</button>
-        <button id="guardar" onClick={() => setGuardar(!guardar)}>Guardar</button>
+        <input
+          id="editar"
+          placeholder={tarea.tarea}
+          onChange={(e) => setGuardarTareas(e.target.value)}
+        />
+        <button id="cancelar" onClick={() => setEditarTarea(!editarTarea)}>
+          Cancelar
+        </button>
+        <button id="guardar" inputValue={guardarTareas}  
+        onClick={() => setGuardarTareas(guardarTareas)}>
+        Guardar
+        </button>
       </div>
     );
-  } 
+  }
+  if (guardarTareas) {
+    return () => {
+      setEditarTarea(!editarTarea);
+      setGuardarTareas("");
+    };
+  }
 
-//if (guardar) {return ());};
-//*
-
+//
   return (
     <div
       className={
