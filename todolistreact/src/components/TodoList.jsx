@@ -1,39 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../Task.css";
 
 const TodoList = ({ tarea, borrarTarea }) => {
   const [completada, setCompletada] = useState(false);
   const [editarTarea, setEditarTarea] = useState(false);
-  const [guardarTareas, setGuardarTareas] = useState("");
+  const [guardarTarea, setGuardarTarea] = useState("");
 
- 
-// EDITAR TAREA 
+  //editar tarea
   if (editarTarea) {
     return (
       <div>
         <input
-          id="editar"
+          id="editado"
           placeholder={tarea.tarea}
-          onChange={(e) => setGuardarTareas(e.target.value)}
+          onChange={(e) => setGuardarTarea(e.target.value)}
         />
         <button id="cancelar" onClick={() => setEditarTarea(!editarTarea)}>
           Cancelar
         </button>
-        <button id="guardar" inputValue={guardarTareas}  
-        onClick={() => setGuardarTareas(guardarTareas)}>
-        Guardar
+        <button
+          id="guardar"
+          inputValue={guardarTarea}
+          onClick={() => {
+            setEditarTarea(!editarTarea);
+            tarea.tarea = guardarTarea;
+            setGuardarTarea(guardarTarea);
+          }}
+        >
+          Guardar
         </button>
       </div>
     );
   }
-  if (guardarTareas) {
-    return () => {
-      setEditarTarea(!editarTarea);
-      setGuardarTareas("");
-    };
-  }
 
-//
+ 
+
   return (
     <div
       className={
@@ -51,11 +52,11 @@ const TodoList = ({ tarea, borrarTarea }) => {
       <button onClick={() => borrarTarea(tarea.id)} id="eliminar">
         Eliminar
       </button>
-      <button id="editar" onClick={() => setEditarTarea(!editarTarea)}>Editar</button>
+      <button id="editar" onClick={() => setEditarTarea(!editarTarea)}>
+        Editar
+      </button>
     </div>
   );
 };
 
-
 export { TodoList };
-

@@ -27,7 +27,7 @@ function App() {
   };
 
   const borrarTarea = (id) => {
-    const tareasActualizadas = tareas.filter((tarea) => {
+    const tareasActualizadas = tareas.filter((tarea)  => {
       return tarea.id !== id;
     });
     setTareas(tareasActualizadas);
