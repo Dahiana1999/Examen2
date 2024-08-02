@@ -7,7 +7,7 @@ const TodoForm = ({ handleChange, addTask, tarea }) => {
         <input
           type="text"
           value={tarea}
-          placeholder="Ingresa una tarea"
+          placeholder="Escribe una tarea"
           onChange={handleChange}
         />
         <button type="submit">Agregar</button>

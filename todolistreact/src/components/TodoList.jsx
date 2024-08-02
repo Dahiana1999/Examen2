@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../Task.css";
 
 const TodoList = ({ tarea, borrarTarea }) => {
@@ -20,7 +20,6 @@ const TodoList = ({ tarea, borrarTarea }) => {
         </button>
         <button
           id="guardar"
-          inputValue={guardarTarea}
           onClick={() => {
             setEditarTarea(!editarTarea);
             tarea.tarea = guardarTarea;
